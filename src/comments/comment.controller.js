@@ -38,18 +38,27 @@ comment.content = req.body.content || comment.content;
   res.json({ message: "Comentario actualizado" });
 };
 
-// Eliminar
 export const deleteComment = async (req, res) => {
-  const comment = await Comment.findById(req.params.id);
+  try {
+    const comment = await Comment.findById(req.params.id);
 
-  if (!comment) return res.status(404).json({ message: "No existe" });
+    if (!comment) {
+      return res.status(404).json({ message: "No existe" });
+    }
 
-  if (comment.user.toString() !== req.user.id) {
-    return res.status(403).json({ message: "No autorizado" });
+    if (comment.authorId.toString() !== req.user.id) {
+      return res.status(403).json({ message: "No autorizado" });
+    }
+
+    await comment.deleteOne();
+
+    res.json({ message: "Comentario eliminado" });
+
+  } catch (error) {
+    res.status(500).json({
+      message: "Error eliminando comentario",
+      error: error.message
+    });
   }
-
-  await comment.deleteOne();
-
-  res.json({ message: "Comentario eliminado" });
 };
 
