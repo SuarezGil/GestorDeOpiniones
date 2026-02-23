@@ -1,0 +1,275 @@
+{
+	"info": {
+		"_postman_id": "6b99fd7e-802b-4559-a7c0-ed1c6d9d8003",
+		"name": "GestorComentarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "52283264",
+		"_collection_link": "https://isuarez-2021691-7572583.postman.co/workspace/Iosef's-Workspace~bb715df8-0696-4af8-898c-0e785264ed73/collection/52283264-6b99fd7e-802b-4559-a7c0-ed1c6d9d8003?action=share&source=collection_link&creator=52283264"
+	},
+	"item": [
+		{
+			"name": "crear publicaciones",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfUkN0ZkdNa01CeVpYIiwianRpIjoiMGQ1NDRjNTktMGU4OS00YWRmLTlmOTQtMWIyZWQzODBiNzhlIiwiaWF0IjoxNzcxODE5OTk3LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODIxNzk3LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.6BSE-cybhGbmFtZT1IJuRMlVBh7khLGq6exhiZAP5oQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"La educación en Guatemala\",\r\n  \"category\": \"Educación\",\r\n  \"content\": \"asdfasdfas\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3006/api/v1/publications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"v1",
+						"publications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "crear comentario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfUkN0ZkdNa01CeVpYIiwianRpIjoiMGQ1NDRjNTktMGU4OS00YWRmLTlmOTQtMWIyZWQzODBiNzhlIiwiaWF0IjoxNzcxODE5OTk3LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODIxNzk3LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.6BSE-cybhGbmFtZT1IJuRMlVBh7khLGq6exhiZAP5oQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"content\": \"Estoy completamente de acuerdo con tu opinión, las becas podrian ayudar mucho \",\r\n  \"authorId\": \"usr_RCtfGMkMByZX\",\r\n  \"postId\": \"699bd42d9353112a7202c765\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3006/api/v1/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"v1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listar publicaciones con comentarios",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfUkN0ZkdNa01CeVpYIiwianRpIjoiMDA2NmMyMTAtYmNjOS00NWU4LWE3YjEtMjEzZjMyY2Y0NWJjIiwiaWF0IjoxNzcxODE1NTg3LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODE3Mzg3LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.6ftRimdzbDp5sMnfQsXqqVxZu9QzkoBGiK4WAmwEU2s",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"content\": \"Estoy completamente de acuerdo con tu opinión.\",\r\n  \"authorId\": \"usr_RCtfGMkMByZX\",\r\n  \"postId\": \"699bc2af20402ede86aad2ec\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3006/api/v1/publications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"v1",
+						"publications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar publicacion",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfUkN0ZkdNa01CeVpYIiwianRpIjoiMGQ1NDRjNTktMGU4OS00YWRmLTlmOTQtMWIyZWQzODBiNzhlIiwiaWF0IjoxNzcxODE5OTk3LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODIxNzk3LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.6BSE-cybhGbmFtZT1IJuRMlVBh7khLGq6exhiZAP5oQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"El deporte en Guatemala\",\r\n  \"category\": \"Deporte\",\r\n  \"content\": \"Creo que el sistema educativo necesita más inversión.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3006/api/v1/publications/IDMONGO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"v1",
+						"publications",
+						"IDMONGO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar publicaciones",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfUkN0ZkdNa01CeVpYIiwianRpIjoiMGQ1NDRjNTktMGU4OS00YWRmLTlmOTQtMWIyZWQzODBiNzhlIiwiaWF0IjoxNzcxODE5OTk3LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODIxNzk3LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.6BSE-cybhGbmFtZT1IJuRMlVBh7khLGq6exhiZAP5oQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3006/api/v1/publications/IDMONGO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"v1",
+						"publications",
+						"IDMONGO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "actualizar comentario",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfUkN0ZkdNa01CeVpYIiwianRpIjoiMGQ1NDRjNTktMGU4OS00YWRmLTlmOTQtMWIyZWQzODBiNzhlIiwiaWF0IjoxNzcxODE5OTk3LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODIxNzk3LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.6BSE-cybhGbmFtZT1IJuRMlVBh7khLGq6exhiZAP5oQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"content\": \"Estoy completamente en desacuerdo con tu opinión, las becas no podrian ayudar mucho \",\r\n  \"authorId\": \"usr_RCtfGMkMByZX\",\r\n  \"postId\": \"699bd42d9353112a7202c765\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3006/api/v1/comments/IDPOSTMAN",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"IDPOSTMAN"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eliminar comentarios",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfUkN0ZkdNa01CeVpYIiwianRpIjoiMGQ1NDRjNTktMGU4OS00YWRmLTlmOTQtMWIyZWQzODBiNzhlIiwiaWF0IjoxNzcxODE5OTk3LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODIxNzk3LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.6BSE-cybhGbmFtZT1IJuRMlVBh7khLGq6exhiZAP5oQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3006/api/v1/comments/IDPOSTMAN",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3006",
+					"path": [
+						"api",
+						"v1",
+						"comments",
+						"IDPOSTMAN"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
