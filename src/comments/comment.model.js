@@ -6,13 +6,14 @@ const commentSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    postId: {
+    publicationId: {
       type: mongoose.Schema.Types.ObjectId,
-      ref: "Post",
+      ref: "Publication",
       required: true,
     },
+    //Este vien del token
     authorId: {
-      type: String, // viene del token
+      type: String, 
       required: true,
     },
   },

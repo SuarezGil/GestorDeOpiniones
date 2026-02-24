@@ -15,7 +15,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfUkN0ZkdNa01CeVpYIiwianRpIjoiMGQ1NDRjNTktMGU4OS00YWRmLTlmOTQtMWIyZWQzODBiNzhlIiwiaWF0IjoxNzcxODE5OTk3LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODIxNzk3LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.6BSE-cybhGbmFtZT1IJuRMlVBh7khLGq6exhiZAP5oQ",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfQlR5MjVZd0tUMzZVIiwianRpIjoiMjhhNmI1NjktNTQ3NC00OWM5LTk3NmMtNjJjNTcxNjAzYjgyIiwiaWF0IjoxNzcxOTAwNTIwLCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxOTAyMzIwLCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.PpE5oYV8lbGJfhfzejDCEajAWmSStTd4a3fzC7BmgKE",
 							"type": "string"
 						}
 					]
@@ -24,7 +24,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"title\": \"La educación en Guatemala\",\r\n  \"category\": \"Educación\",\r\n  \"content\": \"asdfasdfas\"\r\n}",
+					"raw": "{\r\n  \"title\": \"\",\r\n  \"category\": \"\",\r\n  \"content\": \"\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -55,7 +55,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfUkN0ZkdNa01CeVpYIiwianRpIjoiMGQ1NDRjNTktMGU4OS00YWRmLTlmOTQtMWIyZWQzODBiNzhlIiwiaWF0IjoxNzcxODE5OTk3LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODIxNzk3LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.6BSE-cybhGbmFtZT1IJuRMlVBh7khLGq6exhiZAP5oQ",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfQlR5MjVZd0tUMzZVIiwianRpIjoiMjhhNmI1NjktNTQ3NC00OWM5LTk3NmMtNjJjNTcxNjAzYjgyIiwiaWF0IjoxNzcxOTAwNTIwLCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxOTAyMzIwLCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.PpE5oYV8lbGJfhfzejDCEajAWmSStTd4a3fzC7BmgKE",
 							"type": "string"
 						}
 					]
@@ -64,7 +64,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"content\": \"Estoy completamente de acuerdo con tu opinión, las becas podrian ayudar mucho \",\r\n  \"authorId\": \"usr_RCtfGMkMByZX\",\r\n  \"postId\": \"699bd42d9353112a7202c765\"\r\n}",
+					"raw": "{\r\n  \"content\": \"Estoy completamente de acuerdo con tu opinión, el deporte podrian ayudar mucho \",\r\n\r\n  //AUTHORID DEBE DE SER EL ID DEL USUARIO QUE DA POSTMAN AL LOGUEARSE\r\n  \"authorId\": \"usr_BTy25YwKT36U\",\r\n  //PUBLICATIONID DEBE DE SER EL ID DEL MONGGOOSE\r\n  \"publicationId\": \"\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -107,7 +107,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"content\": \"Estoy completamente de acuerdo con tu opinión.\",\r\n  \"authorId\": \"usr_RCtfGMkMByZX\",\r\n  \"postId\": \"699bc2af20402ede86aad2ec\"\r\n}"
+					"raw": ""
 				},
 				"url": {
 					"raw": "http://localhost:3006/api/v1/publications",
@@ -133,7 +133,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfUkN0ZkdNa01CeVpYIiwianRpIjoiMGQ1NDRjNTktMGU4OS00YWRmLTlmOTQtMWIyZWQzODBiNzhlIiwiaWF0IjoxNzcxODE5OTk3LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODIxNzk3LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.6BSE-cybhGbmFtZT1IJuRMlVBh7khLGq6exhiZAP5oQ",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfQ0p0M1Z3SnRwOTVqIiwianRpIjoiNWFkOGUyNTYtNjUxMC00MjhkLTgxNTQtODg0YzVkY2VkYjZhIiwiaWF0IjoxNzcxODY0Mzk2LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODY2MTk2LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.XH94DTKzSY-p5KbKbQkyOXKJ8TwqY3k15k0Hxo_qseU",
 							"type": "string"
 						}
 					]
@@ -142,7 +142,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"title\": \"El deporte en Guatemala\",\r\n  \"category\": \"Deporte\",\r\n  \"content\": \"Creo que el sistema educativo necesita más inversión.\"\r\n}",
+					"raw": "{\r\n  \"title\": \"\",\r\n  \"category\": \"\",\r\n  \"content\": \"\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -150,7 +150,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3006/api/v1/publications/IDMONGO",
+					"raw": "http://localhost:3006/api/v1/publications/IDPOSTMAN",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -160,7 +160,7 @@
 						"api",
 						"v1",
 						"publications",
-						"IDMONGO"
+						"IDPOSTMAN"
 					]
 				}
 			},
@@ -174,7 +174,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfUkN0ZkdNa01CeVpYIiwianRpIjoiMGQ1NDRjNTktMGU4OS00YWRmLTlmOTQtMWIyZWQzODBiNzhlIiwiaWF0IjoxNzcxODE5OTk3LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODIxNzk3LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.6BSE-cybhGbmFtZT1IJuRMlVBh7khLGq6exhiZAP5oQ",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfQ0p0M1Z3SnRwOTVqIiwianRpIjoiNWFkOGUyNTYtNjUxMC00MjhkLTgxNTQtODg0YzVkY2VkYjZhIiwiaWF0IjoxNzcxODY0Mzk2LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODY2MTk2LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.XH94DTKzSY-p5KbKbQkyOXKJ8TwqY3k15k0Hxo_qseU",
 							"type": "string"
 						}
 					]
@@ -182,7 +182,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3006/api/v1/publications/IDMONGO",
+					"raw": "http://localhost:3006/api/v1/publications/IDMONGOOSE",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -192,7 +192,7 @@
 						"api",
 						"v1",
 						"publications",
-						"IDMONGO"
+						"IDMONGOOSE"
 					]
 				}
 			},
@@ -206,7 +206,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfUkN0ZkdNa01CeVpYIiwianRpIjoiMGQ1NDRjNTktMGU4OS00YWRmLTlmOTQtMWIyZWQzODBiNzhlIiwiaWF0IjoxNzcxODE5OTk3LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODIxNzk3LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.6BSE-cybhGbmFtZT1IJuRMlVBh7khLGq6exhiZAP5oQ",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c3JfQ0p0M1Z3SnRwOTVqIiwianRpIjoiYzc0MDkzZTItZDM3YS00ZmQyLWJmNDAtYmY0YzhiZTA2OTNhIiwiaWF0IjoxNzcxODY0NzU1LCJyb2xlIjoiVVNFUl9ST0xFIiwiZXhwIjoxNzcxODY2NTU1LCJhdWQiOiJBdXRoU2VydmljZSIsImlzcyI6IkF1dGhTZXJ2aWNlIn0.ww_tlEcoboWXpwUWShSOCu9NjapDQR3HfAguApeMcuY",
 							"type": "string"
 						}
 					]
@@ -215,7 +215,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n  \"content\": \"Estoy completamente en desacuerdo con tu opinión, las becas no podrian ayudar mucho \",\r\n  \"authorId\": \"usr_RCtfGMkMByZX\",\r\n  \"postId\": \"699bd42d9353112a7202c765\"\r\n  }",
+					"raw": "{\r\n  \"content\": \"\",\r\n  \"authorId\": \"\",\r\n  \"publicationId\": \"\"\r\n  }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -254,6 +254,15 @@
 				},
 				"method": "DELETE",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://localhost:3006/api/v1/comments/IDPOSTMAN",
 					"protocol": "http",

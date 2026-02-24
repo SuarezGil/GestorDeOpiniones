@@ -44,7 +44,7 @@ export const createCommentValidator = [
     .notEmpty().withMessage("Escribe algo antes de comentar ")
     .isLength({ min: 3 }).withMessage("Tu comentario es muy corto, escribe un poco más"),
 
-  body("postId")
+  body("publicationId")
     .notEmpty().withMessage("No se encontró la publicación a la que quieres comentar")
     .isMongoId().withMessage("La publicación seleccionada no es válida"),
 ];

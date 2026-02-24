@@ -4,7 +4,7 @@ export const createComment = async (req, res) => {
   try {
     const comment = new Comment({
       content: req.body.content,
-      postId: req.body.postId,
+      publicationId: req.body.publicationId,
       authorId: req.user.id,
     });
 

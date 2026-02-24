@@ -29,12 +29,12 @@ const publicationSchema = new mongoose.Schema(
 publicationSchema.virtual("comments", {
   ref: "Comment",
   localField: "_id",
-  foreignField: "postId",
+  foreignField: "publicationId",
 });
 publicationSchema.virtual("commentsCount", {
   ref: "Comment",
   localField: "_id",
-  foreignField: "postId",
+  foreignField: "publicationId",
   count: true,
 });
 

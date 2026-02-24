@@ -49,7 +49,7 @@ export const deletePublication = async (req, res) => {
     if (!publication) {
       return res.status(404).json({
         success: false,
-        message: "No existe",
+        message: "La publicación no existe",
       });
     }
 
@@ -57,7 +57,7 @@ export const deletePublication = async (req, res) => {
     if (publication.authorId !== req.user.id) {
       return res.status(403).json({
         success: false,
-        message: "No autorizado",
+        message: "No autorizado para eliminar esta publicacion",
       });
     }
 
