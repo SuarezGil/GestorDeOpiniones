@@ -1,4 +1,4 @@
-import jwt from "jsonwebtoken";
+asdfasdfasdfasdfimport jwt from "jsonwebtoken";
 
 export const validateJWT = (req, res, next) => {
   try {
